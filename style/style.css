@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+    /* ### Primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* ### Neutral */
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    color: #fff;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Very-dark-blue-main-BG);
+}
+h1{
+    margin-top: 2rem;
+    color: #fff;
+    /* text-align: center; */
+}
+h1:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+p{
+    margin-top: 2rem;
+    color: var(--Soft-blue);
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 290px;    
+    /* text-align: justify; */
+}
+span{
+    color: #fff;   
+}
+.container{
+width: 330px;
+height: 545px;
+margin-left: auto;
+margin-right: auto;
+background-color: var(--Very-dark-blue-card-BG);
+border-radius: 1.5rem;
+}
+.container__image{
+    border-radius: 2rem;   
+    width: 280px;
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container__description{
+    margin: auto;
+    width: 270px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--Soft-blue);
+}
+.container__image img{
+    width: 280px;
+    
+    border-radius: 1.5rem;
+}
+.container__bitcoin{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;       
+    font-size: 1.5rem;     
+}
+/* .container__bitcoin span{
+    
+} */
+.container__bitcoin-etherum{
+    color:  var(--Cyan);
+}
+.container__bitcoin-timeleft{
+    text-align: right;
+    color: var(--Soft-blue);
+}
+.container__avatar{
+display: inline-block;
+color: var(--Soft-blue);
+font-weight: 400;
+font-size: 1.4rem;
+position: relative;
+margin-left: 20px;
+margin-top: 4px;
+}
+.container__avatar img{
+    width: 35px;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.container__avatar p{
+    margin-left: 60px;
+}
+.container__avatar span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.attribution { margin-top: 20px; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
